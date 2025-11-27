@@ -57,7 +57,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
     highlights: [
       'DevOps + product mindset since 2021, comfortable across CI/CD, backend APIs, and design systems.',
       'Shrank custom email automation time from 8 hours to 2 seconds with Make.com/Zapier + custom scripts.',
-      'Keeps ~90 mixed-OS workstations & multi-server labs reliable with Linux-first tooling.',
+      'Keeps several mixed-OS workstations and multi-server labs reliable using Linux-first tooling.',
       'Creates human interfaces for ERP dashboards, Telegram Mini Apps, and experimental UI/UX prototypes.',
     ],
     experiences: [
@@ -78,7 +78,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
         period: 'Aug 2022 – Aug 2025',
         focus: 'Hybrid workplace infrastructure, automation, on-site reliability.',
         bullets: [
-          'Standardized ~90 workstations and re-engineered Keenetic routing to cut tickets by 50%.',
+          'Standardized several workstations and re-engineered Keenetic routing to cut tickets by 50%.',
           'Built Bash/Node.js monitors for Linux servers + NAS backups with alerting hooks.',
           'Handled everything from cabling to advanced systemd/network tuning across Debian/Ubuntu.',
         ],
@@ -156,7 +156,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
     highlights: [
       '2021年から DevOps + プロダクト志向で、CI/CD・バックエンド・デザインまで一気通貫。',
       'Make.com / Zapier と自作スクリプトでメール自動化を8時間→2秒に短縮。',
-      '約90台の異種OS環境と複数サーバーを Linux 中心のツールで安定運用。',
+      '複数の異なるOSを搭載したワークステーションやマルチサーバーのラボ環境を、Linuxを中心としたツールで安定的に運用している。',
       'ERP ダッシュボードや Telegram Mini Apps のUI/UX設計を担当。',
     ],
     experiences: [
@@ -177,7 +177,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
         period: '2022年8月 – 2025年8月',
         focus: 'ハイブリッド環境のインフラ運用と自動化。',
         bullets: [
-          '約90台の端末を標準化し、Keenetic ルーティング最適化で問い合わせ50%削減。',
+          '複数の異なるOSを搭載したワークステーションやマルチサーバーのラボ環境を、Linuxを中心としたツールで安定的に運用している。',
           'Bash / Node.js 監視と NAS バックアップの自動化を構築。',
           '配線から systemd / ネットワークの高度調整まで幅広く担当。',
         ],

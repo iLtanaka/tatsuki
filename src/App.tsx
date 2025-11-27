@@ -167,7 +167,7 @@ const App = () => {
   const [locale, setLocale] = useState<Locale>('en');
   const [theme, setTheme] = useState<Theme>('nord');
   const [isMatrixMode, setIsMatrixMode] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(true);
   const [confettiParticles, setConfettiParticles] = useState<Particle[]>([]);
   
   const content = profileContent[locale];
