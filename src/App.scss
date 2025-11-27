@@ -103,19 +103,19 @@ body {
   inset: 0;
   background-image: repeating-linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0.03),
-      rgba(255, 255, 255, 0.03) 1px,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 1px,
       transparent 1px,
       transparent 2px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.015),
-      rgba(255, 255, 255, 0.015) 1px,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.03) 1px,
       transparent 1px,
       transparent 3px
     );
-  opacity: 0.5;
+  opacity: 0.65;
   pointer-events: none;
   z-index: 1;
 }
@@ -230,6 +230,20 @@ body {
 .hero {
   padding: 2.5rem 2.75rem 1.5rem;
   border-bottom: 2px solid var(--nord3);
+  display: flex;
+  flex-direction: column;
+
+  &__grid {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    flex: 1;
+    min-width: 240px;
+  }
 
   &__greeting {
     text-transform: uppercase;
@@ -309,6 +323,45 @@ body {
         border-color: var(--nord8);
         transform: translateY(-2px);
       }
+    }
+  }
+
+  &__avatar {
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    border: 6px solid var(--nord3);
+    border-radius: 50%;
+    background: var(--nord1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-size: 0.7rem;
+    color: var(--nord6);
+    opacity: 0.9;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--nord0);
+      filter: saturate(0.85);
+    }
+
+    figcaption {
+      margin-top: 0.4rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.5em;
+    }
+
+    &:hover {
+      border-color: var(--nord8);
+      transform: translateY(-2px);
     }
   }
 }
@@ -831,6 +884,17 @@ body {
   .hero,
   .panel {
     padding: 1.5rem;
+  }
+
+  .hero__grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .hero__avatar {
+    width: 120px;
+    height: 120px;
   }
 
   .terminal__header {

@@ -4,6 +4,7 @@ import type { Locale } from './data/profile';
 import { profileContent } from './data/profile';
 import './App.scss';
 import archLogoArt from './archlogo.md?raw';
+import profilePicture from '../profile-picture.jpg';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 8 },
@@ -438,15 +439,22 @@ const App = () => {
         </header>
 
         <motion.section className="hero" initial="hidden" animate="visible" variants={fadeIn}>
-          <h1 className="glitch" data-text={content.hero.title}>
-            <TypeWriter text={content.hero.title} speed={80} />
-          </h1>
-          <p className="hero__subtitle">{content.hero.subtitle}</p>
-          <div className="hero__links">
-            <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
-            <a href={content.contact.github} target="_blank" rel="noreferrer">
-              GitHub ↗
-            </a>
+          <div className="hero__grid">
+            <div className="hero__text">
+              <h1 className="glitch" data-text={content.hero.title}>
+                <TypeWriter text={content.hero.title} speed={80} />
+              </h1>
+              <p className="hero__subtitle">{content.hero.subtitle}</p>
+              <div className="hero__links">
+                <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
+                <a href={content.contact.github} target="_blank" rel="noreferrer">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+            <figure className="hero__avatar">
+              <img src={profilePicture} alt="Tatsuki profile portrait" loading="lazy" />
+            </figure>
           </div>
         </motion.section>
 
